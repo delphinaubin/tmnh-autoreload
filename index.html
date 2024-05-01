@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TMNH Reservations 10m</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: black;
+      }
+      #toreload {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe
+      id="toreload"
+      src="https://app.liberfit.fr/widget/display/fc7d138f-ddcd-48f8-8857-acc6484f82bc/"
+    >
+    </iframe>
+    <script>
+      const ONE_MINUTE = 60000;
+
+      setInterval(() => {
+        document.getElementById("toreload").contentWindow.location =
+          "https://app.liberfit.fr/widget/display/fc7d138f-ddcd-48f8-8857-acc6484f82bc/";
+      }, ONE_MINUTE);
+    </script>
+  </body>
+</html>
